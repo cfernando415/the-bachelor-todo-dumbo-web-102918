@@ -44,7 +44,7 @@ end
 require 'pry'
 def get_average_age_for_season(data, season)
   # code here
-  sum_age = 0.0
+  sum_age = 0
   i = 0
   data.each do |seasons, contestants|
     if seasons ==  season
@@ -55,5 +55,5 @@ def get_average_age_for_season(data, season)
     end
   end
   #binding.pry
-  return (sum_age / i).ceil.to_i
+  return (sum_age / i).ceil
 end
