@@ -51,8 +51,9 @@ def get_average_age_for_season(data, season)
       contestants.each do |contestant|
         sum_age += contestant["age"].to_f
       end
+      i = contestants.length
     end
-    i = contestants.length
+    
   end
   #binding.pry
   return (sum_age / i).ceil
