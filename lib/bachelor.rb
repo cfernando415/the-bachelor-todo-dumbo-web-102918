@@ -50,7 +50,7 @@ def get_average_age_for_season(data, season)
     if seasons ==  season
       contestants.each do |contestant|
         sum_age += contestant["age"].to_f
-        i += 1
+        i += 1.0
       end
     end
   end
